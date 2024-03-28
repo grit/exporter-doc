@@ -16,8 +16,10 @@
     <nav class="primary-menu navbar navbar-expand-lg">
         <div class="logo-wrapper">
             {[ inject "component_site_logo" context page /]}
-            <script>
+            <script defer data-domain="supernova.ux.sie.sony" src="https://telemetry.ux.sie.sony.com/js/script.js"
+            >
                 console.log("test analytics");
+                console.log("test: ", window.location.href);
             </script>
 
             {[ if designSystem.designSystemSwitcher.isEnabled ]}
