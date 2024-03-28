@@ -16,6 +16,9 @@
     <nav class="primary-menu navbar navbar-expand-lg">
         <div class="logo-wrapper">
             {[ inject "component_site_logo" context page /]}
+            <script>
+                console.log("test analytics");
+            </script>
 
             {[ if designSystem.designSystemSwitcher.isEnabled ]}
                 {[ let dsSwitcher = ds.currentDesignSystemSwitcher() /]}
